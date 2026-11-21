@@ -1,0 +1,15 @@
+name = "nho-hi"
+main = "src/index.js"
+compatibility_date = "2026-01-01"
+
+# Giờ UTC = giờ Việt Nam − 7. Ba khung nhắc: 7:00, 12:00, 20:00 giờ Việt Nam.
+# Mỗi khung chạy 2 phút một lần trong một giờ để xử lý lần lượt mọi sổ; chạy xong rồi thì các lần sau thoát ngay.
+[triggers]
+crons = ["*/2 0 * * *", "*/2 5 * * *", "*/2 13 * * *"]
+
+[[kv_namespaces]]
+binding = "REMINDERS"
+id = "4243eb7cc76b432da9509c0b35ed57ce"
+
+[observability]
+enabled = true

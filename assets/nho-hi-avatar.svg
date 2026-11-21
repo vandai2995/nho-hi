@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <radialGradient id="sky" cx="50%" cy="34%" r="80%">
+      <stop offset="0" stop-color="#7a4bb5"/>
+      <stop offset="0.55" stop-color="#4a2580"/>
+      <stop offset="1" stop-color="#22103f"/>
+    </radialGradient>
+    <linearGradient id="moon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff6dc"/>
+      <stop offset="1" stop-color="#f6d98f"/>
+    </linearGradient>
+    <linearGradient id="bell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd872"/>
+      <stop offset="1" stop-color="#eda72c"/>
+    </linearGradient>
+    <mask id="crescent">
+      <rect width="1024" height="1024" fill="black"/>
+      <circle cx="470" cy="440" r="285" fill="white"/>
+      <circle cx="585" cy="375" r="240" fill="black"/>
+    </mask>
+    <path id="star" d="M0 -26 Q4 -4 26 0 Q4 4 0 26 Q-4 4 -26 0 Q-4 -4 0 -26Z"/>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#sky)"/>
+
+  <g fill="#fff3cf">
+    <use href="#star" x="215" y="215" opacity="0.9"/>
+    <use href="#star" x="800" y="560" opacity="0.75" transform="translate(800 560) scale(0.7) translate(-800 -560)"/>
+    <use href="#star" x="330" y="120" opacity="0.6" transform="translate(330 120) scale(0.5) translate(-330 -120)"/>
+    <use href="#star" x="850" y="250" opacity="0.6" transform="translate(850 250) scale(0.55) translate(-850 -250)"/>
+    <circle cx="150" cy="420" r="5" opacity="0.6"/>
+    <circle cx="740" cy="130" r="5" opacity="0.6"/>
+    <circle cx="905" cy="430" r="4" opacity="0.5"/>
+  </g>
+
+  <rect width="1024" height="1024" fill="url(#moon)" mask="url(#crescent)"/>
+
+  <g transform="translate(612 392)">
+    <circle cx="0" cy="-112" r="20" fill="none" stroke="url(#bell)" stroke-width="12"/>
+    <path d="M-92 70 C-92 -20 -78 -92 0 -92 C78 -92 92 -20 92 70 L116 104 Q0 122 -116 104 Z" fill="url(#bell)"/>
+    <path d="M-116 104 Q0 122 116 104 L116 112 Q0 134 -116 112 Z" fill="#c9821a"/>
+    <circle cx="0" cy="140" r="24" fill="#ffd872"/>
+    <path d="M-52 -40 C-50 -62 -34 -74 -14 -78" fill="none" stroke="#fff3cf" stroke-width="10" stroke-linecap="round" opacity="0.7"/>
+  </g>
+
+  <g fill="none" stroke="#190a33" stroke-linecap="round">
+    <g stroke-width="16">
+      <path d="M40 810 A120 100 0 0 1 280 810"/>
+      <path d="M280 810 A120 100 0 0 1 520 810"/>
+      <path d="M520 810 A120 100 0 0 1 760 810"/>
+      <path d="M760 810 A120 100 0 0 1 1000 810"/>
+    </g>
+    <g stroke-width="7">
+      <path d="M100 810V745M160 810V712M220 810V745M340 810V745M400 810V712M460 810V745M580 810V745M640 810V712M700 810V745M820 810V745M880 810V712M940 810V745"/>
+    </g>
+    <path d="M0 818H1024" stroke-width="20"/>
+    <path d="M280 826V880M520 826V880M760 826V880" stroke-width="22"/>
+  </g>
+  <rect y="868" width="1024" height="156" fill="#190a33"/>
+  <g stroke="#f6d98f" stroke-width="6" stroke-linecap="round" opacity="0.35">
+    <path d="M380 905H520M430 935H600M400 965H500"/>
+  </g>
+</svg>

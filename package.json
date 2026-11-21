@@ -1,0 +1,16 @@
+{
+  "name": "nho-hi",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Nhớ Hỉ — bot Telegram nhắc ngày quan trọng (âm lịch & dương lịch), chạy miễn phí trên Cloudflare Workers",
+  "scripts": {
+    "test": "node --test",
+    "setup": "node scripts/setup.mjs",
+    "deploy": "wrangler deploy",
+    "logs": "wrangler tail"
+  },
+  "devDependencies": {
+    "wrangler": "^4"
+  }
+}
